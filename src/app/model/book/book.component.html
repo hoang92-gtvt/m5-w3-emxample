@@ -10,7 +10,7 @@
     <th class="card-header">Active</th>
   </tr>
   <tr *ngFor="let item of books, let ind = index" >
-      <td>{{ind +1}}</td>
+      <td class="stt">{{ind +1}}</td>
       <td><a routerLink="/detail/{{item.id}}">{{item.title}}</a> </td>
       <td>{{item.author}}</td>
       <td><a routerLink="/edit/{{item.id}}">Sửa</a> || <a routerLink="/delete/{{item.id}}">Xóa</a></td>
