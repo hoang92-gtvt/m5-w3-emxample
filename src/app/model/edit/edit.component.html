@@ -1,0 +1,14 @@
+<h3>Sửa thông tin  Book</h3>
+<button routerLink="/list">Quay về danh sach</button>
+
+<form  [formGroup] ="book" (ngSubmit)="editBook()">
+  <table>
+    <tr>
+      <td>Tên: <input type="text" name ="title" formControlName="title" ></td>
+      <td>Tác giả: <input type="text" name ="author" formControlName="author"> </td>
+      <td>Mô tả :  <input type="text" name ="description" formControlName="description" ></td>
+    </tr>
+
+  </table>
+  <button>Sửa</button>
+</form>
